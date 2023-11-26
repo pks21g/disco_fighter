@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: 'lato', 'Segoe UI', Tahoma, Verdana, sans-serif, Courier, monospace;
+    letter-spacing: 6px;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #ccccb2;
+}
+
+.container{
+    width: 1100px;
+    margin:0 auto;
+    padding:0 auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(0, 118, 206, 0.7);
+    color:#fff;
+    height: 100px;
+    position:sticky;
+    top:0;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding:10px;
+    margin: 0 5px;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+@media (max-width:620px) {
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 10px;
+    }
+    .navbar h1{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .navbar li a{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media (min-width:620px) and (max-width:930px){
+    .navbar{
+        height: 140px;
+    }
+    .navbar .flex{
+        flex-direction: column;
+
+    }
+    .navbar ul{
+        padding: 10px;
+    }
+    .navbar ul a{
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    .navbar h1{
+        font-size: 2rem;
+        padding: 10px;
+    }
+}
+
