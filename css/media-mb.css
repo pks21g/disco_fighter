@@ -1,0 +1,19 @@
+@media (max-width:620px) {
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 10px;
+    }
+    .navbar h1{
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    .navbar li a{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
